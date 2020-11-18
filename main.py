@@ -126,13 +126,13 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**__HQ Trivia Crowd Results !__**", colour=0x00ff00)
+        self.embed=discord.Embed(title="**__Kumu Trivia Crowd Results !__**", colour=0x00ff00)
         self.embed.add_field(name="**__Option ❶__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❷__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❸__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775384878942257173/775933617943347230/unnamed.gif")
-        self.embed.set_footer(text='Made by Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778476536214585385/icon.png")
+        self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
         self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
         self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
@@ -217,19 +217,19 @@ class Bot(discord.Client):
         if lowest < 0:
             if wrong == 1:
                 one_cross = " ❌"
-                not_answer = "**Option ➜** <:emoji_39:773917426835521536>" 
+                not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 2:
                 two_cross = " ❌"
-                not_answer = "**Option ➜** <:emoji_50:773917478723125269>" 
+                not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 3:
                 three_cross = " ❌"
-                not_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+                not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
 
             if wrong == 4:
                 four_cross = " ❌"
-                not_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+                not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
         self.embed.set_field_at(0, name="**__Option ❶__**", value=f"**[{lst_scores[0]}]({g}){one_check}{one_cross}**")
@@ -237,7 +237,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(2, name="**__Option ❸__**", value=f"**[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option ❹__**", value=f"**[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
-        self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
+        #self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
