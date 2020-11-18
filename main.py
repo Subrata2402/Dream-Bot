@@ -126,14 +126,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**__Kumu Trivia Crowd Results !__**", colour=0x00ff00)
+        self.embed=discord.Embed(title="**__Kumu Trivia Answers :__**", colour=0x00ff00)
         self.embed.add_field(name="**__Option ❶__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❷__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❸__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778476536214585385/icon.png")
+        #self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778476536214585385/icon.png")
         self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
-        self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
+        #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
 
@@ -237,7 +237,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(2, name="**__Option ❸__**", value=f"**[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option ❹__**", value=f"**[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
-        self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
+        #self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
