@@ -337,7 +337,7 @@ class Bot(discord.Client):
 
        if message.content.startswith('+k'):
            await message.delete()
-           await message.channel.send("@everyone It's Kumu Time <:kumu:778499210798432256>")
+           await message.channel.send(content="@everyone It's Kumu Time <:kumu:778499210798432256>")
 
         # process votes
         if message.channel.id == self.embed_channel_id:
