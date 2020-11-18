@@ -133,7 +133,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778476536214585385/icon.png")
         self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
-        #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
+        self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
 
@@ -170,7 +170,7 @@ class Bot(discord.Client):
 
         highest = max(lst_scores)
         gif_ans = 'https://cdn.discordapp.com/attachments/769445612231720960/774230429023993896/unnamed.gif'
-        best_answer = '**Option ➜** <a:redload:772439692411011073>'
+        best_answer = '**Option ➜** <a:redload:772439692411011073> <a:emoji_26:772878582930210848>'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         wrong = lst_scores.index(lowest)+1
@@ -181,7 +181,7 @@ class Bot(discord.Client):
                 one_check = " <:emoji_13:772843132093202443>  "
                 mark_check_one = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773618942874615828/772873539174268990.png"
-                best_answer = "**Option ➜** <:emoji_65:778484715761434634>"
+                best_answer = "**Option ➜** <:emoji_65:778484715761434634> <a:emoji_26:772878582930210848>"
                    
             else:
                 one_check = " "
@@ -190,7 +190,7 @@ class Bot(discord.Client):
                 two_check = " <:emoji_13:772843132093202443>  "
                 mark_check_two = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619358031151159/772873573999443978.png"
-                best_answer = "**Option ➜** <:emoji_66:778484756840448011>"
+                best_answer = "**Option ➜** <:emoji_66:778484756840448011> <a:emoji_26:772878582930210848>"
                    
             else:
                 two_check = ""
@@ -199,7 +199,7 @@ class Bot(discord.Client):
                 three_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619564206489600/772873605754388480.png"
-                best_answer = "**Option ➜** <:emoji_67:778484782132756480>"
+                best_answer = "**Option ➜** <:emoji_67:778484782132756480> <a:emoji_26:772878582930210848>"
                    
             else:
                 three_check = ""
@@ -208,7 +208,7 @@ class Bot(discord.Client):
                 four_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619564206489600/772873605754388480.png"
-                best_answer = "**Option ➜** <:emoji_68:778487061741174814>"
+                best_answer = "**Option ➜** <:emoji_68:778487061741174814> <a:emoji_26:772878582930210848>"
 
             else:
                 four_check = ""
@@ -237,7 +237,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(2, name="**__Option ❸__**", value=f"**[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option ❹__**", value=f"**[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
-        #self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
+        self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
@@ -251,7 +251,7 @@ class Bot(discord.Client):
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
         log=self.get_channel(775948612014178315)
-        await log.send("> ** Vedantu 2.0 Database Is Updated ** ✅")
+        await log.send("> ** Kumu Database Is Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
