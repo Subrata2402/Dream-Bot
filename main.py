@@ -133,8 +133,8 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778476536214585385/icon.png")
         self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
-        self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
-        self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
+        #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
+        #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
 
         #await self.bot.add_reaction(embed,':spy:')
@@ -216,19 +216,19 @@ class Bot(discord.Client):
 
         if lowest < 0:
             if wrong == 1:
-                one_cross = " ❌"
+                one_cross = " <:emoji_43:776062431100928001>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 2:
-                two_cross = " ❌"
+                two_cross = " <:emoji_43:776062431100928001>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 3:
-                three_cross = " ❌"
+                three_cross = " <:emoji_43:776062431100928001>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
 
             if wrong == 4:
-                four_cross = " ❌"
+                four_cross = " <:emoji_43:776062431100928001>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
