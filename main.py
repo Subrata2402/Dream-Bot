@@ -264,7 +264,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "km":
+        if message.content.lower() == "+k":
             await message.delete()
 
             self.embed_msg = None
