@@ -170,7 +170,7 @@ class Bot(discord.Client):
 
         highest = max(lst_scores)
         gif_ans = 'https://cdn.discordapp.com/attachments/769445612231720960/774230429023993896/unnamed.gif'
-        best_answer = '**Option ➜** <a:redload:772439692411011073> <a:emoji_26:772878582930210848>'
+        best_answer = '**Option ➜** <a:redload:772439692411011073>'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         wrong = lst_scores.index(lowest)+1
