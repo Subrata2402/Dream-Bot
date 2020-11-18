@@ -255,7 +255,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="with Vedantu Trivia !"))
+        await self.change_presence(activity=discord.Activity(type=1,name="with Kumu Trivia (km)"))
 
     async def on_message(self, message):
 
