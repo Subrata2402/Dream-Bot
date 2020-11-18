@@ -335,10 +335,9 @@ class Bot(discord.Client):
            embed = discord.Embed(description="**⚠️ Question No. 12 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
            await message.channel.send(embed=embed)   
 
-       if message.content.startswith('+k'):
+       if message.content.lower() == "+k":
            await message.delete()
-           embed = discord.Embed(description="")
-           await message.channel.send(content="@everyone It's Kumu Time <:kumu:778499210798432256>", embed=embed)
+           await message.channel.send(content="@everyone It's Kumu Time <:kumu:778499210798432256>")
 
         # process votes
         if message.channel.id == self.embed_channel_id:
