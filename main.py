@@ -250,8 +250,8 @@ class Bot(discord.Client):
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
-        log=self.get_channel(775948612014178315)
-        await log.send("> ** Kumu Database Is Updated ** ✅")
+        #log=self.get_channel(775948612014178315)
+        #await log.send("> ** Kumu Database Is Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
@@ -264,7 +264,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+k":
+        if message.content.lower() == "km":
             await message.delete()
 
             self.embed_msg = None
@@ -300,7 +300,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('Nzc4NDc0NDE5ODQwMDkwMTIy.X7SgzQ.Rd-BE2Qgi0FpSY0Eu-UaWdWH2Jc'))
+    loop.create_task(bot.start('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU'))
     loop.run_forever()
 
 
