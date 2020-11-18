@@ -19,7 +19,7 @@ g="https://discord.gg/2degbQMAxU"
  
 oot_channel_id_list = ["775945251340156930"]
 
-answer_pattern = re.compile(r'(n|not)?([1-3]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
+answer_pattern = re.compile(r'(n|not)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
 apgscore = 1000
 nomarkscore = 320
@@ -130,6 +130,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option ❶__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❷__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❸__**", value=f"**[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775384878942257173/775933617943347230/unnamed.gif")
         self.embed.set_footer(text='Made by Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
         self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
@@ -151,12 +152,15 @@ class Bot(discord.Client):
         one_check = ""
         two_check = ""
         three_check = ""
+        four_check = ""
         mark_check_one=""
         mark_check_two=""
         mark_check_three=""
+        mark_check_four=""
         one_cross =""
         two_cross =""
         three_cross =""
+        four_cross =""
         best_answer = "**Option ➜** <a:redload:772439692411011073>"
         not_answer = "**Option ➜** <a:redload:772439692411011073>"
               
@@ -200,7 +204,15 @@ class Bot(discord.Client):
             else:
                 three_check = ""
 
-            
+            if answer == 4:
+                four_check = " <:emoji_13:772843132093202443> "
+                mark_check_three = "<:emoji_62:735102374523306047>"
+                gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619564206489600/772873605754388480.png"
+                best_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+
+            else:
+                four_check = ""
+
 
         if lowest < 0:
             if wrong == 1:
@@ -214,14 +226,19 @@ class Bot(discord.Client):
             if wrong == 3:
                 three_cross = " ❌"
                 not_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+
+            if wrong == 4:
+                four_cross = " ❌"
+                not_answer = "**Option ➜** <:emoji_44:773918363402371074>"
          
     
         self.embed.set_field_at(0, name="**__Option ❶__**", value=f"**[{lst_scores[0]}]({g}){one_check}{one_cross}**")
         self.embed.set_field_at(1, name="**__Option ❷__**", value=f"**[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option ❸__**", value=f"**[{lst_scores[2]}]({g}){three_check}{three_cross}**")
-        self.embed.set_thumbnail(url="{}".format(gif_ans))
-        self.embed.set_field_at(3, name="**__Correct Answer !__**", value=best_answer, inline=True)
-        self.embed.set_field_at(4, name="**__Erased Answer !__**", value=not_answer, inline=True) 
+        self.embed.set_field_at(3, name="**__Option ❹__**", value=f"**[{lst_scores[3]}]({g}){four_check}{four_cross}**")
+        #self.embed.set_thumbnail(url="{}".format(gif_ans))
+        self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
+        #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
         if self.embed_msg is not None:
@@ -247,7 +264,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+v":
+        if message.content.lower() == "km":
             await message.delete()
 
             self.embed_msg = None
@@ -283,7 +300,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('Nzc1OTM0NjIyMjgyMjg1MDg3.X6tjbg.-AkIf1_vvcs2-LgrnSEeS3GRS1k'))
+    loop.create_task(bot.start('Nzc4NDc0NDE5ODQwMDkwMTIy.X7SgzQ.Rd-BE2Qgi0FpSY0Eu-UaWdWH2Jc'))
     loop.run_forever()
 
 
