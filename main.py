@@ -132,7 +132,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option ❸__**", value=f"**[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778496961354924042/icon.png")
-        self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/828f7b13ce161e8a9d4c129e0ac776c4.webp?size=1024')
+        self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/emojis/778499210798432256.png')
         #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
