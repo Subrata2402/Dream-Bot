@@ -17,7 +17,7 @@ import concurrent
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["775945251340156930"]
+oot_channel_id_list = ["773610866679611413", "775945251340156930"]
 
 answer_pattern = re.compile(r'(n|not)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
