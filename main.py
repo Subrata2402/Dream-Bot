@@ -181,7 +181,7 @@ class Bot(discord.Client):
                 one_check = " <:emoji_13:772843132093202443>  "
                 mark_check_one = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773618942874615828/772873539174268990.png"
-                best_answer = "**Option ➜** <:emoji_39:773917426835521536>"
+                best_answer = "**Option ➜** <:emoji_65:778484715761434634>"
                    
             else:
                 one_check = " "
@@ -190,7 +190,7 @@ class Bot(discord.Client):
                 two_check = " <:emoji_13:772843132093202443>  "
                 mark_check_two = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619358031151159/772873573999443978.png"
-                best_answer = "**Option ➜** <:emoji_50:773917478723125269>"
+                best_answer = "**Option ➜** <:emoji_66:778484756840448011>"
                    
             else:
                 two_check = ""
@@ -199,7 +199,7 @@ class Bot(discord.Client):
                 three_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619564206489600/772873605754388480.png"
-                best_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+                best_answer = "**Option ➜** <:emoji_67:778484782132756480>"
                    
             else:
                 three_check = ""
@@ -208,7 +208,7 @@ class Bot(discord.Client):
                 four_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/attachments/769445612231720960/773619564206489600/772873605754388480.png"
-                best_answer = "**Option ➜** <:emoji_44:773918363402371074>"
+                best_answer = "**Option ➜** <:emoji_68:778487061741174814>"
 
             else:
                 four_check = ""
