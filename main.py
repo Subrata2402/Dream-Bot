@@ -25,11 +25,26 @@ async def on_ready():
 	    
 @client.command()
 async def q(ctx,que: str):
-	     embed=discord.Embed(title="", description=f"``Question {que} Is Comming On 📱``", color=discord.Color.red())
+	     embed=discord.Embed(title="", description=f"Question {que} Is Comming On 📱", color=discord.Color.red())
 	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/702945721610928219/704569122956247131/700566617456902146.gif")
 	     embed.set_image(url="https://cdn.discordapp.com/attachments/691596509539598379/692639381109997618/HmjViJc.gif")
 	     embed.set_footer(text="©Server Manager | Myran#0001")
 	     await ctx.send(content="@everyone",embed=embed)
+
+@client.command()
+async def hq(ctx,time=None, accuracy=None, ques=None, prize=None):
+	if not time or not accuracy or not ques or not prize:
+		await ctx.say("wrong use! please add correct values")
+	else:
+		embed=discord.Embed(color=discord.Color.red())
+		embed.add_field(name="Hq Trivia",value="Results of Hq Trivia")
+		embed.add_field(name="Game Time",value=time)
+		embed.add_field(name="Accuracy",value=accuracy)
+		embed.add_field(name="Total Question",value=ques)
+		embed.add_field(name="Winning amount",value=prize)
+		embed.set_footer(text="Made by Myran#0001")
+		embed.set_thumbnail(url="") #Put Your Thumbnail url
+		await ctx.send(embed=embed)
 
 client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
