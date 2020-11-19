@@ -277,62 +277,98 @@ class Bot(discord.Client):
                 
         if message.content.startswith('+q1'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 1 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 1 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q2'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 2 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 2 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q3'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 3 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 3 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q4'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 4 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 4 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q5'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 5 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 5 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q6'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 6 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 6 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q7'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 7 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 7 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q8'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 8 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 8 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q9'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 9 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 9 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q0'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 10 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 10 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+qe1'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 11 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 11 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+qe2'):
            await message.delete()
-           embed = discord.Embed(description="**⚠️ Question No. 12 is coming soon on your mobile screen. Be ready !!**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 12 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
+           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
+           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
            await message.channel.send(embed=embed)   
 
         # process votes
