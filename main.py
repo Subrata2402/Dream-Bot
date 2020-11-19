@@ -25,7 +25,7 @@ async def on_ready():
 	    
 @client.command()
 async def q(ctx,que: str):
-             client.remove_command()
+             #client.remove_command()
 	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. [{que}](https://discord.gg/2degbQMAxU) is coming soon on your mobile screen.**", color=discord.Color.red())
 	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
 	     embed.set_image(url="https://cdn.discordapp.com/attachments/775385239245160478/778921858363949057/Tw.gif")
@@ -53,7 +53,7 @@ async def hq(ctx,time=None, accuracy=None, ques=None, prize=None):
 		embed.set_thumbnail(url="") #Put Your Thumbnail url
 		await ctx.send(embed=embed)
 
-client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
+#client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
 #BOT_OWNER_ROLE = 'Runner' # change to what you need
 #BOT_OWNER_ROLE_ID = "503197827556704268" 
@@ -324,7 +324,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 1 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q2'):
@@ -332,7 +332,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 2 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q3'):
@@ -340,7 +340,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 3 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q4'):
@@ -348,7 +348,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 4 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q5'):
@@ -356,7 +356,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 5 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q6'):
@@ -364,7 +364,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 6 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q7'):
@@ -372,7 +372,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 7 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q8'):
@@ -380,7 +380,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 8 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q9'):
@@ -388,7 +388,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 9 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+q0'):
@@ -396,7 +396,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 10 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+qe1'):
@@ -404,7 +404,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 11 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)
 
         if message.content.startswith('+qe2'):
@@ -412,7 +412,7 @@ class Bot(discord.Client):
            embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 12 is coming soon on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="HQ Trivia | Subrata#3297", icon_url="https://cdn.discordapp.com/emojis/750255302787465317.png")
+           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send(embed=embed)   
 
         # process votes
