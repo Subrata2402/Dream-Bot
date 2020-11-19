@@ -53,7 +53,7 @@ async def hq(ctx,time=None, accuracy=None, ques=None, prize=None):
 		embed.set_thumbnail(url="") #Put Your Thumbnail url
 		await ctx.send(embed=embed)
 
-#client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
+client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
 #BOT_OWNER_ROLE = 'Runner' # change to what you need
 #BOT_OWNER_ROLE_ID = "503197827556704268" 
