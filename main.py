@@ -32,6 +32,12 @@ async def q(ctx,que: str):
 	     embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
 	     await ctx.send(embed=embed)
 
+@client.command(pass_context=True)
+async def announce(ctx,*,message,):
+    embed=discord.Embed(title="**__ANNOUNCEMENT__**",description=messaage,color=0x00FF00)
+    embed.set_footer(text="Made by Subrata#3297")
+    await client.send_message(ctx.message.channel,embed=embed)
+
 @client.command()
 async def hq(ctx,time=None, accuracy=None, ques=None, prize=None):
 	if not time or not accuracy or not ques or not prize:
