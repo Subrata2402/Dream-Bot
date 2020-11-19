@@ -25,7 +25,8 @@ async def on_ready():
 	    
 @client.command()
 async def q(ctx,que: str):
-	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. `{que}` is comming soon on your mobile screen.**", color=discord.Color.red())
+             await ctx.delete()
+	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. [{que}](https://discord.gg/2degbQMAxU) is coming soon on your mobile screen.**", color=discord.Color.red())
 	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
 	     embed.set_image(url="https://cdn.discordapp.com/attachments/775385239245160478/778921858363949057/Tw.gif")
 	     embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
