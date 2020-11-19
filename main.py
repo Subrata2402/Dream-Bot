@@ -25,15 +25,15 @@ async def on_ready():
 	    
 @client.command()
 async def q(ctx,que: str):
-             #await ctx.delete()
+             client.remove_command()
 	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. [{que}](https://discord.gg/2degbQMAxU) is coming soon on your mobile screen.**", color=discord.Color.red())
 	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
 	     embed.set_image(url="https://cdn.discordapp.com/attachments/775385239245160478/778921858363949057/Tw.gif")
 	     embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
 	     await ctx.send(embed=embed)
 
-@client.command(pass_context=True)
-async def announce(ctx,*,message,):
+@client.command()
+async def ann(ctx,*,message,):
     embed=discord.Embed(title="**__ANNOUNCEMENT__**",description=messaage,color=0x00FF00)
     embed.set_footer(text="Made by Subrata#3297")
     await client.send_message(ctx.message.channel,embed=embed)
