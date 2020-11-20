@@ -271,7 +271,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "km":
+        if message.content.lower() == "@sf":
             await message.delete()
 
             self.embed_msg = None
@@ -282,7 +282,7 @@ class Bot(discord.Client):
             await self.embed_msg.add_reaction("<a:emoji_48:776277928333017129>")
             self.embed_channel_id = message.channel.id    
                 
-        if message.content.startswith('+v'):
+        if message.content.startswith('+atvd'):
            await message.delete()
            #embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. １ is coming soon on your mobile screen.**", color=0x0000FF)
            #embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
@@ -349,7 +349,7 @@ class Bot(discord.Client):
            await message.channel.send("@everyone **It's Vedantu Time**")
            await message.channel.send("@everyone **It's Vedantu Time**")
 
-        if message.content.startswith('+m'):
+        if message.content.startswith('+atml'):
            await message.delete()
            #embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 2 is coming up on your mobile screen.**", color=0x0000FF)
            #embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
@@ -416,7 +416,7 @@ class Bot(discord.Client):
            await message.channel.send("@everyone **It's Moolah Time**")
            await message.channel.send("@everyone **It's Moolah Time**")
 
-        if message.content.startswith('+s'):
+        if message.content.startswith('+atsb'):
            await message.delete()
            #embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 3 is coming soon on your mobile screen.**", color=0x0000FF)
            #embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
@@ -483,7 +483,7 @@ class Bot(discord.Client):
            await message.channel.send("@everyone **It's SwagIQ Time**")
            await message.channel.send("@everyone **It's SwagIQ Time**")
 
-        if message.content.startswith('+h'):
+        if message.content.startswith('+athq'):
            await message.delete()
            #embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 4 is coming soon on your mobile screen.**", color=0x0000FF)
            #embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
