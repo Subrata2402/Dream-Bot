@@ -262,7 +262,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="with Kumu Trivia (km)"))
+        await self.change_presence(activity=discord.Activity(type=1,name="with Subrata#3297"))
 
     async def on_message(self, message):
 
@@ -549,70 +549,6 @@ class Bot(discord.Client):
            await message.channel.send("@everyone **It's HQ Time**")
            await message.channel.send("@everyone **It's HQ Time**")
            await message.channel.send("@everyone **It's HQ Time**")
-
-        if message.content.startswith('+q5'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 5 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+q6'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 6 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+q7'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 7 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+q8'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 8 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+q9'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 9 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+q0'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 10 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+qe1'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 11 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)
-
-        if message.content.startswith('+qe2'):
-           await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 12 is coming soon on your mobile screen.**", color=0x0000FF)
-           embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
-           embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send(embed=embed)   
 
         # process votes
         if message.channel.id == self.embed_channel_id:
