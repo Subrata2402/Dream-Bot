@@ -14,45 +14,7 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import colorsys
 
-client = commands.Bot(command_prefix='-')
-client.remove_command('help')
 
-@client.event
-async def on_ready():
-    print('online')
-    print('----------')
-    
-	    
-@client.command()
-async def q(ctx,que: str):
-             await ctx.message.delete()
-             #client.remove_command()
-	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. [{que}](https://discord.gg/2degbQMAxU) is coming soon on your mobile screen.**", color=discord.Color.red())
-	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
-	     embed.set_image(url="https://cdn.discordapp.com/attachments/775385239245160478/778921858363949057/Tw.gif")
-	     embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
-	     await ctx.send(embed=embed)
-
-@client.command()
-async def ann(ctx,*,message,):
-    embed=discord.Embed(title="**__ANNOUNCEMENT__**",description=messaage,color=0x00FF00)
-    embed.set_footer(text="Made by Subrata#3297")
-    await client.send_message(ctx.message.channel,embed=embed)
-
-@client.command()
-async def hq(ctx,time=None, accuracy=None, ques=None, prize=None):
-	if not time or not accuracy or not ques or not prize:
-		await ctx.say("wrong use! please add correct values")
-	else:
-		embed=discord.Embed(color=discord.Color.red())
-		embed.add_field(name="Hq Trivia",value="Results of Hq Trivia")
-		embed.add_field(name="Game Time",value=time)
-		embed.add_field(name="Accuracy",value=accuracy)
-		embed.add_field(name="Total Question",value=ques)
-		embed.add_field(name="Winning amount",value=prize)
-		embed.set_footer(text="Made by Myran#0001")
-		embed.set_thumbnail(url="") #Put Your Thumbnail url
-		await ctx.send(embed=embed)
 
 #client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
