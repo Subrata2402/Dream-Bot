@@ -25,6 +25,7 @@ async def on_ready():
 	    
 @client.command()
 async def q(ctx,que: str):
+             await ctx.message.delete()
              #client.remove_command()
 	     embed=discord.Embed(title="**__QUESTION ALERT !__**", url="https://discord.gg/2degbQMAxU", description=f"**Question No. [{que}](https://discord.gg/2degbQMAxU) is coming soon on your mobile screen.**", color=discord.Color.red())
 	     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775385239245160478/778865719437164544/help-147419__340.png")
