@@ -301,7 +301,7 @@ class Bot(discord.Client):
 
         if message.content.startswith('+q2'):
            await message.delete()
-           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 2 is coming soon on your mobile screen.**", color=0x0000FF)
+           embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. 2 is coming up on your mobile screen.**", color=0x0000FF)
            embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
