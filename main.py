@@ -282,14 +282,22 @@ class Bot(discord.Client):
             await self.embed_msg.add_reaction("<a:emoji_48:776277928333017129>")
             self.embed_channel_id = message.channel.id    
                 
-        if message.content.startswith('+q1'):
+        if message.content.startswith('+v'):
            await message.delete()
            #embed = discord.Embed(title=f"**__QUESTION ALERT !__**", url="https://discord.gg/vGeN4ZUQye", description="**Question No. １ is coming soon on your mobile screen.**", color=0x0000FF)
            #embed.set_image(url="https://cdn.discordapp.com/attachments/775945251340156930/778851388108701726/Tw.gif")
            #embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            #embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
-           await message.channel.send("Questions no 2 is coming up on your mobile screen.")
-           await message.channel.send("Questions no 2 is coming up on your mobile screen.")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
+           await message.channel.send("@everyone **It's Vedantu Time**")
 
         if message.content.startswith('+q2'):
            await message.delete()
