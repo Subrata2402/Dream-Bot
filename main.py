@@ -289,6 +289,7 @@ class Bot(discord.Client):
            #embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            #embed.set_footer(text="Developed by Subrata#3297", icon_url="https://cdn.discordapp.com/attachments/775945251340156930/778840043116167198/help-147419__340.png")
            await message.channel.send("Questions no 2 is coming up on your mobile screen.")
+           await message.channel.send("Questions no 2 is coming up on your mobile screen.")
 
         if message.content.startswith('+q2'):
            await message.delete()
