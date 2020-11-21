@@ -285,7 +285,7 @@ class Bot(discord.Client):
     bot = commands.Bot(command_prefix = '+')
     bot.remove_command('help')
 
-    @client.command()
+    @bot.command()
     async def say(ctx, *, message):
            await ctx.send(message)
                 
