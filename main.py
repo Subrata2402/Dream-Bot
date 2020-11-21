@@ -14,7 +14,12 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import colorsys
 
+bot = commands.Bot(command_prefix = '+')
+bot.remove_command('help')
 
+@bot.command()
+async def say(ctx, *, message):
+     await ctx.send(message)
 
 #client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
@@ -281,13 +286,6 @@ class Bot(discord.Client):
                 await message.channel.send('',embed=self.embed)
             await self.embed_msg.add_reaction("<a:emoji_48:776277928333017129>")
             self.embed_channel_id = message.channel.id  
-
-    bot = commands.Bot(command_prefix = '+')
-    bot.remove_command('help')
-
-    @bot.command()
-    async def say(ctx, *, message):
-           await ctx.send(message)
                 
         # process votes
         if message.channel.id == self.embed_channel_id:
