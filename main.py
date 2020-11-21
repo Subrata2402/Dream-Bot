@@ -280,7 +280,14 @@ class Bot(discord.Client):
             self.embed_msg = \
                 await message.channel.send('',embed=self.embed)
             await self.embed_msg.add_reaction("<a:emoji_48:776277928333017129>")
-            self.embed_channel_id = message.channel.id    
+            self.embed_channel_id = message.channel.id  
+
+    bot = commands.Bot(command_prefix = '+')
+    bot.remove_command('help')
+
+    @client.command()
+    async def say(ctx, *, message):
+           await ctx.send(message)
                 
         if message.content.startswith('+atvd'):
            await message.delete()
