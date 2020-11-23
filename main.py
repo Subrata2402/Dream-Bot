@@ -14,12 +14,6 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import colorsys
 
-bot = commands.Bot(command_prefix = '+')
-bot.remove_command('help')
-
-@bot.command()
-async def say(ctx, *, message):
-     await ctx.send(message)
 
 #client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
@@ -267,7 +261,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="with Subrata#3297"))
+        await self.change_presence(activity=discord.Activity(type=1,name="with Kumu (km)"))
 
     async def on_message(self, message):
 
@@ -276,7 +270,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "@sf":
+        if message.content.lower() == "km":
             await message.delete()
 
             self.embed_msg = None
@@ -311,7 +305,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzM3ODk5ODkzMjIxMzU5NjI2.XyEE1A.7c0yWi6e88oZQtfoqXwQt7MIYYA'))
+    loop.create_task(bot.start('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU'))
     loop.run_forever()
 
 
