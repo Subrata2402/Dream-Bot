@@ -140,7 +140,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788767623718502430.png")
         self.embed.set_footer(text='Zaimo | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
-        self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
+        #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
 
@@ -243,8 +243,8 @@ class Bot(discord.Client):
         self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
-        #self.embed.set_thumbnail(url="{}".format(gif_ans))
-        self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
+        self.embed.set_thumbnail(url="{}".format(gif_ans))
+        #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
