@@ -140,7 +140,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788767623718502430.png")
         self.embed.set_footer(text='Zaimo | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
-        #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
+        self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
 
@@ -188,7 +188,7 @@ class Bot(discord.Client):
                 one_check = " <:emoji_13:772843132093202443>  "
                 mark_check_one = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484715761434634.png"
-                best_answer = "**Option ➜** <:emoji_65:778484715761434634> <a:emoji_26:772878582930210848>"
+                best_answer = "**Option ➜** <:emoji_65:778484715761434634> <a:Yes:769595037028843580>"
                    
             else:
                 one_check = " "
@@ -197,7 +197,7 @@ class Bot(discord.Client):
                 two_check = " <:emoji_13:772843132093202443>  "
                 mark_check_two = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484756840448011.png"
-                best_answer = "**Option ➜** <:emoji_66:778484756840448011> <a:emoji_26:772878582930210848>"
+                best_answer = "**Option ➜** <:emoji_66:778484756840448011> <a:Yes:769595037028843580>"
                    
             else:
                 two_check = ""
@@ -206,7 +206,7 @@ class Bot(discord.Client):
                 three_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484782132756480.png"
-                best_answer = "**Option ➜** <:emoji_67:778484782132756480> <a:emoji_26:772878582930210848>"
+                best_answer = "**Option ➜** <:emoji_67:778484782132756480> <a:Yes:769595037028843580>"
                    
             else:
                 three_check = ""
@@ -215,7 +215,7 @@ class Bot(discord.Client):
                 four_check = " <:emoji_13:772843132093202443> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778487061741174814.png"
-                best_answer = "**Option ➜** <:emoji_68:778487061741174814> <a:emoji_26:772878582930210848>"
+                best_answer = "**Option ➜** <:emoji_68:778487061741174814> <a:Yes:769595037028843580>"
 
             else:
                 four_check = ""
@@ -244,7 +244,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
-        #self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
+        self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
 
