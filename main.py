@@ -275,7 +275,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "dt":
+        if message.content.lower() == "+":
             await message.delete()
 
             self.embed_msg = None
