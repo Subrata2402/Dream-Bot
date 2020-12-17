@@ -257,8 +257,8 @@ class Bot(discord.Client):
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
-        #log=self.get_channel(775948612014178315)
-        #await log.send("> ** Kumu Database Is Updated ** ✅")
+        log=self.get_channel(775945251340156930)
+        await log.send("> ** Zaimo Database Is Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
         while True:
@@ -284,6 +284,7 @@ class Bot(discord.Client):
             self.embed_msg = \
                 await message.channel.send('',embed=self.embed)
             await self.embed_msg.add_reaction("<a:emoji_48:776277928333017129>")
+            await self.embed_msg.add_reaction("<a:emoji_26:772878582930210848>")
             self.embed_channel_id = message.channel.id  
                 
         # process votes
