@@ -261,8 +261,12 @@ class Bot(discord.Client):
         #await log.send("> ** Kumu Database Is Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
-        #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Activity(type=1,name="with Kumu (km)"))
+        while True:
+            await self.change_presence(activity=discord.Game(name="with Danger || Trivia★᭄ꦿ᭄ | Command=dt"))
+            await asyncio.sleep(2)
+            await self.change_presence(activity=discord.Activity(type=2,name="with Zaimo Trivia !"))
+            await asyncio.sleep(2)
+
 
     async def on_message(self, message):
 
@@ -271,7 +275,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "km":
+        if message.content.lower() == "dt":
             await message.delete()
 
             self.embed_msg = None
