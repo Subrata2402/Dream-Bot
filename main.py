@@ -132,13 +132,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**__Kumu Trivia Answers :__**", colour=0x00ff00)
-        self.embed.add_field(name="**__Option ❶__**", value=f"**[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option ❷__**", value=f"**[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option ❸__**", value=f"**[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option ❹__**", value=f"**[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775948612014178315/778496961354924042/icon.png")
-        self.embed.set_footer(text='Kumu | Subrata#3297',icon_url='https://cdn.discordapp.com/emojis/778499210798432256.png')
+        self.embed=discord.Embed(colour=0x00ff00)
+        self.embed.set_author(name="Zaimo Answers :", icon_url="https://cdn.discordapp.com/emojis/788767623718502430.png")
+        self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788767623718502430.png")
+        self.embed.set_footer(text='Zaimo | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer !__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
@@ -238,10 +239,10 @@ class Bot(discord.Client):
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
-        self.embed.set_field_at(0, name="**__Option ❶__**", value=f"**[{lst_scores[0]}]({g}){one_check}{one_cross}**")
-        self.embed.set_field_at(1, name="**__Option ❷__**", value=f"**[{lst_scores[1]}]({g}){two_check}{two_cross}**")
-        self.embed.set_field_at(2, name="**__Option ❸__**", value=f"**[{lst_scores[2]}]({g}){three_check}{three_cross}**")
-        self.embed.set_field_at(3, name="**__Option ❹__**", value=f"**[{lst_scores[3]}]({g}){four_check}{four_cross}**")
+        self.embed.set_field_at(0, name="**__Option -１__**", value=f"➜ **[{lst_scores[0]}]({g}){one_check}{one_cross}**")
+        self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
+        self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
+        self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer !__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
