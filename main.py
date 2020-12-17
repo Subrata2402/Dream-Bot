@@ -23,7 +23,7 @@ import colorsys
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["773610866679611413", "775945251340156930"]
+oot_channel_id_list = ["788998011149484033", "788977659547746336", "788389503982108673", "775945251340156930", "788977659547746336", "788977659547746336"]
 
 answer_pattern = re.compile(r'(n|not)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
@@ -243,7 +243,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
-        self.embed.set_thumbnail(url="{}".format(gif_ans))
+        #self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
