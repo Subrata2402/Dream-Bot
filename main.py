@@ -23,7 +23,7 @@ import colorsys
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["788389503982108673", "789520646978797618", "789044225336803358", "788389503982108673", "789044225336803358", "788389503982108673", "788998011149484033", "788977659547746336", "788389503982108673", "775945251340156930", "788977659547746336", "788977659547746336"]
+oot_channel_id_list = ["789520246443868200", "788389503982108673", "789520646978797618", "789044225336803358", "788389503982108673", "789044225336803358", "789520246443868200", "788389503982108673", "788998011149484033", "789520246443868200", "788977659547746336", "788389503982108673", "775945251340156930", "788977659547746336", "788977659547746336"]
 
 answer_pattern = re.compile(r'(n|not)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
@@ -133,13 +133,13 @@ class Bot(discord.Client):
         # embed creation
         #value=random.randint(0,0xffffff)
         self.embed=discord.Embed(colour=0x00ff00)
-        self.embed.set_author(name="Zaimo Answers :", icon_url="https://cdn.discordapp.com/emojis/788767623718502430.png")
+        self.embed.set_author(name="**Danger || Trivia★᭄ꦿ᭄**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/788767623718502430.png")
-        self.embed.set_footer(text='Zaimo | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/787155458996568115.png")
+        self.embed.set_footer(text='DTB | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
