@@ -264,7 +264,7 @@ class Bot(discord.Client):
         while True:
             await self.change_presence(activity=discord.Game(name="with Danger || Trivia★᭄ꦿ᭄ | Command=dt"))
             await asyncio.sleep(2)
-            await self.change_presence(activity=discord.Activity(type=2,name="with Zaimo Trivia !"))
+            await self.change_presence(activity=discord.Activity(type=2,name="with Zaimo & Kumu Trivia !"))
             await asyncio.sleep(2)
 
 
