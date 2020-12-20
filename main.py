@@ -133,7 +133,7 @@ class Bot(discord.Client):
         # embed creation
         #value=random.randint(0,0xffffff)
         self.embed=discord.Embed(colour=0x00ff00)
-        self.embed.set_author(name="**Danger || Trivia★᭄ꦿ᭄**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
+        self.embed.set_author(name="Danger || Trivia★᭄ꦿ᭄", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
