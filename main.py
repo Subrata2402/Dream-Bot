@@ -17,8 +17,8 @@ import colorsys
 
 #client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
-BOT_OWNER_ROLE = 'Runner' # change to what you need
-BOT_OWNER_ROLE_ID = "503197827556704268" 
+BOT_OWNER_ROLE = '($DTBR$)' # change to what you need
+BOT_OWNER_ROLE_ID = "793123278481784852" 
   
 g="https://discord.gg/2degbQMAxU" 
 
@@ -288,7 +288,8 @@ class Bot(discord.Client):
                 self.embed_channel_id = message.channel.id  
 
             else:
-                await message.channel.send("**Lol** You Not Have permission To Use This **Cmd!** :stuck_out_tongue_winking_eye:")
+                embed=discord.Embed(description="**Lol** You Not Have Permission to Use This **Command!** :stuck_out_tongue_winking_eye: If you want to run this bot then DM <@660337342032248832>"
+                await message.channel.send(embed=embed)
             return
                 
         # process votes
