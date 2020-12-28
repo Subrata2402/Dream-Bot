@@ -288,7 +288,7 @@ class Bot(discord.Client):
                 self.embed_channel_id = message.channel.id  
 
             else:
-                embed=discord.Embed(title="**Lol** You Not Have Permission to Use This **Command!** :stuck_out_tongue_winking_eye: If you want to run this bot then DM <@660337342032248832>", color=0x00ff00)
+                embed=discord.Embed(title="__Danger Private [DTB]#7565__", description="**Lol** You Not Have Permission to Use This **Cmd!** :stuck_out_tongue_winking_eye: If You Want to Use This Command Then DM Subrata#3297", color=0x00ff00)
                 await message.channel.send(embed=embed)
             return
                 
