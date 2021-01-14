@@ -23,7 +23,7 @@ BOT_OWNER_ROLE_ID = "793123278481784852"
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["798238659631382600", "797755504738697216", "796573179732164669", "793392396876120115", "786768541797711932", "789520246443868200", "788389503982108673", "789520646978797618", "789044225336803358", "788389503982108673", "789044225336803358", "789520246443868200", "788389503982108673", "788998011149484033", "789520246443868200", "788977659547746336", "788389503982108673", "775945251340156930", "788977659547746336", "788977659547746336"]
+oot_channel_id_list = ["798822635261657108", "798468658057445428", "798238659631382600", "797755504738697216", "796573179732164669", "793392396876120115", "786768541797711932", "789520246443868200", "788389503982108673", "789520646978797618", "789044225336803358", "788389503982108673", "789044225336803358", "789520246443868200", "788389503982108673", "788998011149484033", "789520246443868200", "788977659547746336", "788389503982108673", "775945251340156930", "788977659547746336", "788977659547746336"]
 
 answer_pattern = re.compile(r'(n|not|nt)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
@@ -139,7 +139,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/787155458996568115.png")
-        self.embed.set_footer(text='DTB | Subrata#3297',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
+        self.embed.set_footer(text='DTB | DANGER PRIVATE',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
