@@ -17,8 +17,8 @@ import colorsys
 
 #client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
 
-BOT_OWNER_ROLE = '($DTBR$)' # change to what you need
-BOT_OWNER_ROLE_ID = "793123278481784852" 
+#BOT_OWNER_ROLE = '($DTBR$)' # change to what you need
+#BOT_OWNER_ROLE_ID = "793123278481784852" 
   
 g="https://discord.gg/2degbQMAxU" 
 
@@ -276,8 +276,8 @@ class Bot(discord.Client):
             return
 
         if message.content.lower() == "+":
-            await message.delete()
-            if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
+                await message.delete()
+            #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
                 await self.clear_results()
                 await self.update_embeds()
@@ -287,10 +287,10 @@ class Bot(discord.Client):
                 await self.embed_msg.add_reaction("<a:emoji_26:772878582930210848>")
                 self.embed_channel_id = message.channel.id  
 
-            else:
+            #else:
                 #embed=discord.Embed(title="__Danger Private [DTB]#7565__", description="**Lol** You Not Have Permission to Use This **Cmd!** :stuck_out_tongue_winking_eye: If You Want to Use This Command Then DM Subrata#3297", color=0x00ff00)
-                await message.channel.send("**Lol** You Not Have Permission To Use This Cmd! :stuck_out_tongue_winking_eye:")
-            return
+                #await message.channel.send("**Lol** You Not Have Permission To Use This Cmd! :stuck_out_tongue_winking_eye:")
+            #return
                 
         # process votes
         if message.channel.id == self.embed_channel_id:
