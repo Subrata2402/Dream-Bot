@@ -257,8 +257,8 @@ class Bot(discord.Client):
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
-        log=self.get_channel(775945251340156930)
-        await log.send("> ** Zaimo Database Is Updated ** ✅")
+        log=self.get_channel(775942082615443497)
+        await log.send("> ** DT Database Is Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
         while True:
