@@ -132,14 +132,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(colour=0x00ff00)
-        self.embed.set_author(name="**Crowd Results !**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
+        self.embed=discord.Embed(title="**__Crowd Results !__**", colour=0x00ff00)
+        #self.embed.set_author(name="**Crowd Results !**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/787155458996568115.png")
-        self.embed.set_footer(text='Zaimo || Fangame',icon_url='https://cdn.discordapp.com/avatars/660337342032248832/63eab5b908b485fe7261c6bbc59d2a18.webp?size=1024')
+        self.embed.set_footer(text='Zaimo || Fangame',icon_url='https://cdn.discordapp.com/avatars/807922855501234197/91732a6af9cf4ed8e725969e85dd7edd.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
@@ -176,7 +176,7 @@ class Bot(discord.Client):
         
 
         highest = max(lst_scores)
-        gif_ans = 'https://cdn.discordapp.com/emojis/788767623718502430.png'
+        gif_ans = 'https://cdn.discordapp.com/emojis/773955381063974972.gif'
         best_answer = '**Option ➜** <a:redload:772439692411011073>'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
