@@ -132,14 +132,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**__Crowd Results !__**", colour=0x00ff00)
+        self.embed=discord.Embed(title="**Zaimo || Fangame**", colour=0x00ff00)
         #self.embed.set_author(name="**Crowd Results !**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/787155458996568115.png")
-        self.embed.set_footer(text='Zaimo || Fangame',icon_url='https://cdn.discordapp.com/avatars/807922855501234197/91732a6af9cf4ed8e725969e85dd7edd.webp?size=1024')
+        self.embed.set_footer(text='Connected to PVTS...',icon_url='https://cdn.discordapp.com/avatars/807922855501234197/91732a6af9cf4ed8e725969e85dd7edd.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
