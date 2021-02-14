@@ -138,7 +138,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/787155458996568115.png")
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/775945251340156930/810442266333544478/IMG_20210214_145800.jpg")
         self.embed.set_footer(text='Connected to PVTS...',icon_url='https://cdn.discordapp.com/avatars/807922855501234197/91732a6af9cf4ed8e725969e85dd7edd.webp?size=1024')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
@@ -243,7 +243,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
-        self.embed.set_thumbnail(url="{}".format(gif_ans))
+        #self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
