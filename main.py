@@ -168,7 +168,7 @@ class Bot(discord.Client):
         two_cross =""
         three_cross =""
         four_cross =""
-        best_answer = "**Option ➜** <a:redload:772439692411011073>"
+        best_answer = "**Option ➜** <a:redload:814899976337358868>"
         not_answer = "**Option ➜** <a:redload:772439692411011073>"
               
 
@@ -177,7 +177,7 @@ class Bot(discord.Client):
 
         highest = max(lst_scores)
         gif_ans = 'https://cdn.discordapp.com/emojis/773955381063974972.gif'
-        best_answer = '**Option ➜** <a:redload:772439692411011073>'
+        best_answer = '**Option ➜** <a:redload:814899976337358868>'
         lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         wrong = lst_scores.index(lowest)+1
@@ -185,7 +185,7 @@ class Bot(discord.Client):
 
         if highest > 0:
             if answer == 1:
-                one_check = " <:emoji_13:772843132093202443>  "
+                one_check = " <:emoji_28:799944528739434517>  "
                 mark_check_one = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484715761434634.png"
                 best_answer = "**Option ➜** <:emoji_65:778484715761434634> <a:Yes:769595037028843580>"
@@ -194,7 +194,7 @@ class Bot(discord.Client):
                 one_check = " "
 
             if answer == 2:
-                two_check = " <:emoji_13:772843132093202443>  "
+                two_check = " <:emoji_28:799944528739434517>  "
                 mark_check_two = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484756840448011.png"
                 best_answer = "**Option ➜** <:emoji_66:778484756840448011> <a:Yes:769595037028843580>"
@@ -203,7 +203,7 @@ class Bot(discord.Client):
                 two_check = ""
 
             if answer == 3:
-                three_check = " <:emoji_13:772843132093202443> "
+                three_check = " <:emoji_28:799944528739434517> "
                 mark_check_three = "<:emoji_62:735102374523306047>"
                 gif_ans = "https://cdn.discordapp.com/emojis/778484782132756480.png"
                 best_answer = "**Option ➜** <:emoji_67:778484782132756480> <a:Yes:769595037028843580>"
@@ -223,19 +223,19 @@ class Bot(discord.Client):
 
         if lowest < 0:
             if wrong == 1:
-                one_cross = " <:emoji_43:776062431100928001>"
+                one_cross = " ❌"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 2:
-                two_cross = " <:emoji_43:776062431100928001>"
+                two_cross = " ❌"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 3:
-                three_cross = " <:emoji_43:776062431100928001>"
+                three_cross = " ❌"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
 
             if wrong == 4:
-                four_cross = " <:emoji_43:776062431100928001>"
+                four_cross = " ❌"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
