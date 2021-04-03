@@ -138,7 +138,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/799468818375639050/f6c76879888f57da0d89a00fc5dc17fc.webp?size=1024")
+        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/816117190360694815.png")
         self.embed.set_footer(text='Fangame Pro Live Answer',icon_url='https://cdn.discordapp.com/emojis/816117190360694815.png')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
