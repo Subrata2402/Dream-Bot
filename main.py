@@ -132,14 +132,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**__Crowd Search Results !__**", colour=0x00ff00)
-        #self.embed.set_author(name="**Crowd Results !**", icon_url="https://cdn.discordapp.com/emojis/787155458996568115.png")
+        self.embed=discord.Embed(colour=0x00ff00)
+        self.embed.set_author(name="Fangame Pro Live", icon_url="https://cdn.discordapp.com/emojis/816117190360694815.png")
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/816117190360694815.png")
-        self.embed.set_footer(text='Fangame Pro Live Answer',icon_url='https://cdn.discordapp.com/emojis/816117190360694815.png')
+        self.embed.set_footer(text='Fangame Pro Live',icon_url='https://cdn.discordapp.com/emojis/816117190360694815.png')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
