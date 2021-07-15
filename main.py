@@ -126,14 +126,15 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(title="**Crowd Search Results**", color=discord.Colour.random())
+        self.embed=discord.Embed(title="**Crowd Results !**", color=0x000000)
         #self.embed.set
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
         #self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="")
-        self.embed.set_footer(text='Dream Bot | Private',icon_url='')
+        self.embed.set_footer(text='Jul 15, 2021 6:28 PM',icon_url='')
+        #self.embed.timestamp = datetime.datetime.utcnow()
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
@@ -179,27 +180,27 @@ class Bot(discord.Client):
 
         if highest > 0:
             if answer == 1:
-                one_check = " <:emoji_28:799944528739434517>  "
+                one_check = " <:bot:802577056663207977>"
                 mark_check_one = "<:emoji_62:735102374523306047>"
-                gif_ans = "https://cdn.discordapp.com/emojis/778484715761434634.png"
+                gif_ans = "https://cdn.discordapp.com/emojis/815422237145694209.png"
                 best_answer = "**Option ➜** <:emoji_65:778484715761434634> <a:Yes:769595037028843580>"
                    
             else:
                 one_check = " "
 
             if answer == 2:
-                two_check = " <:emoji_28:799944528739434517>  "
-                mark_check_two = "<:emoji_62:735102374523306047>"
-                gif_ans = "https://cdn.discordapp.com/emojis/778484756840448011.png"
+                two_check = " <:bot:802577056663207977>"
+                mark_check_two = " <:emoji_62:735102374523306047>"
+                gif_ans = "https://cdn.discordapp.com/emojis/815422152106573854.png"
                 best_answer = "**Option ➜** <:emoji_66:778484756840448011> <a:Yes:769595037028843580>"
                    
             else:
                 two_check = ""
 
             if answer == 3:
-                three_check = " <:emoji_28:799944528739434517> "
+                three_check = " <:bot:802577056663207977>"
                 mark_check_three = "<:emoji_62:735102374523306047>"
-                gif_ans = "https://cdn.discordapp.com/emojis/778484782132756480.png"
+                gif_ans = "https://cdn.discordapp.com/emojis/815422044329738301.png"
                 best_answer = "**Option ➜** <:emoji_67:778484782132756480> <a:Yes:769595037028843580>"
                    
             else:
@@ -217,19 +218,19 @@ class Bot(discord.Client):
 
         if lowest < 0:
             if wrong == 1:
-                one_cross = " ❌"
+                one_cross = " <:cross:847394151779794984>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 2:
-                two_cross = " ❌"
+                two_cross = " <:cross:847394151779794984>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>" 
                
             if wrong == 3:
-                three_cross = " ❌"
+                three_cross = " <:cross:847394151779794984>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
 
             if wrong == 4:
-                four_cross = " ❌"
+                four_cross = " <:cross:847394151779794984>"
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
@@ -237,7 +238,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         #self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
-        #self.embed.set_thumbnail(url="{}".format(gif_ans))
+        self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
 
@@ -251,8 +252,8 @@ class Bot(discord.Client):
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
-        log=self.get_channel(775942082615443497)
-        await log.send("> ** DT Database Is Updated ** ✅")
+        log=self.get_channel(840841165544620062)
+        await log.send("> ** Dream Bot Updated ** ✅")
         await self.clear_results()
         await self.update_embeds()
         while True:
@@ -274,7 +275,7 @@ class Bot(discord.Client):
                 await self.clear_results()
                 await self.update_embeds()
                 self.embed_msg = \
-                    await message.channel.send('',embed=self.embed)
+                    await message.channel.send('@everyone',embed=self.embed)
                 await self.embed_msg.add_reaction("<a:2tada:814902637635960862>")
                 await self.embed_msg.add_reaction("<a:fire:815094134845997086>")
                 self.embed_channel_id = message.channel.id  
