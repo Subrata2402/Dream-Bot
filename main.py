@@ -13,12 +13,6 @@ import concurrent
 from discord.ext import commands
 from discord.ext.commands import bot
 import colorsys
-
-
-#client.run('NzczOTI4NTc1NzAyNzk0MjUx.X6QXJw.r-U_XbSALwkVzSxK7zg0DTNytvU')
-
-#BOT_OWNER_ROLE = '($DTBR$)' # change to what you need
-#BOT_OWNER_ROLE_ID = "793123278481784852" 
   
 g="https://discord.gg/2degbQMAxU" 
 
@@ -132,14 +126,14 @@ class Bot(discord.Client):
 
         # embed creation
         #value=random.randint(0,0xffffff)
-        self.embed=discord.Embed(colour=0x00ff00)
-        self.embed.set_author(name="Fangame Pro Live", icon_url="https://cdn.discordapp.com/emojis/816117190360694815.png")
+        self.embed=discord.Embed(title="**Crowd Search Results**", color=discord.Colour.random())
+        #self.embed.set
         self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/emojis/816117190360694815.png")
-        #self.embed.set_footer(text='Fangame Pro Live',icon_url='https://cdn.discordapp.com/emojis/816117190360694815.png')
+        #self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.set_thumbnail(url="")
+        self.embed.set_footer(text='Dream Bot | Private',icon_url='')
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
 
@@ -242,7 +236,7 @@ class Bot(discord.Client):
         self.embed.set_field_at(0, name="**__Option -１__**", value=f"➜ **[{lst_scores[0]}]({g}){one_check}{one_cross}**")
         self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
         self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
-        self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
+        #self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         #self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
         #self.embed.set_field_at(5, name="**__Erased Answer !__**", value=not_answer, inline=True) 
@@ -262,11 +256,9 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         while True:
-            await self.change_presence(activity=discord.Game(name="with Danger || Trivia★᭄ꦿ᭄ | Command=dt"))
+            await self.change_presence(activity=discord.Game(name="with Dream Bot"))
             await asyncio.sleep(2)
-            await self.change_presence(activity=discord.Activity(type=2,name="with Zaimo & Kumu Trivia !"))
-            await asyncio.sleep(2)
-
+            
 
     async def on_message(self, message):
 
@@ -316,7 +308,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('ODI3ODA1OTA3MDY0ODQ4NDE0.YGgYVA.tpIHXkBLhyQK0Bujyekl5nEPbhs'))
+    loop.create_task(bot.start('ODY1MjAxOTc2MDU5ODg3NjE4.YPAkIQ.goXY3PSdteRqQOk8r6oZME0OGq0'))
     loop.run_forever()
 
 
@@ -325,8 +317,8 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NjYwMzM3MzQyMDMyMjQ4ODMy.X6uAMA.Z5E4mok4Fn7iAzMRRN_1dLZSGqY',
-                                   bot=False))
+    loop.create_task(selfbot.start('NzM3ODk5ODkzMjIxMzU5NjI2.XyEE1A.7c0yWi6e88oZQtfoqXwQt7MIYYA',
+                                   bot=True))
     loop.run_forever()
 
 if __name__ == '__main__':
