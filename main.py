@@ -17,7 +17,7 @@ import colorsys
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["775945251340156930", "825756175877537812", "827587687501660190"]
+oot_channel_id_list = ["840827362735292426"]
 
 answer_pattern = re.compile(r'(n|not|nt)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
@@ -318,8 +318,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NzM3ODk5ODkzMjIxMzU5NjI2.XyEE1A.7c0yWi6e88oZQtfoqXwQt7MIYYA',
-                                   bot=True))
+    loop.create_task(selfbot.start('NjYwMzM3MzQyMD4ODMy.YL2t5A.Eo-MAxORsgBXmrRhi_UzU-_RUtg'))
     loop.run_forever()
 
 if __name__ == '__main__':
