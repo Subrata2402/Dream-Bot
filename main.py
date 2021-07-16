@@ -264,14 +264,14 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+":
+        if message.content.lower() == "st":
                 await message.delete()
             #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
                 await self.clear_results()
                 await self.update_embeds()
                 self.embed_msg = \
-                    await message.channel.send('@everyone',embed=self.embed)
+                    await message.channel.send('@TriviaPlayers',embed=self.embed)
                 await self.embed_msg.add_reaction("<a:2tada:814902637635960862>")
                 await self.embed_msg.add_reaction("<a:fire:815094134845997086>")
                 self.embed_channel_id = message.channel.id  
