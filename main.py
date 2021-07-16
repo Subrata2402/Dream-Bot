@@ -17,7 +17,7 @@ import colorsys
 g="https://discord.gg/2degbQMAxU" 
 
  
-oot_channel_id_list = ["840827362735292426"]
+oot_channel_id_list = ["857639867723153518"]
 
 answer_pattern = re.compile(r'(n|not|nt)?([1-4]{1})(\?)?(cnf|c|cf|conf|apg)?(\w|\ww)?$', re.IGNORECASE)
 
