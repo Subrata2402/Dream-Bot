@@ -128,9 +128,9 @@ class Bot(discord.Client):
         #value=random.randint(0,0xffffff)
         self.embed=discord.Embed(title="**Crowd Results !**", color=0x000000)
         #self.embed.set
-        self.embed.add_field(name="**__Option -１__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option -２__**", value=f"➜ **[0]({g})**", inline=False)
-        self.embed.add_field(name="**__Option -３__**", value=f"➜ **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -１__**", value=f"<a:test:852779743643697194> **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -２__**", value=f"<a:test:852779743643697194> **[0]({g})**", inline=False)
+        self.embed.add_field(name="**__Option -３__**", value=f"<a:test:852779743643697194> **[0]({g})**", inline=False)
         #self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="")
         self.embed.set_footer(text='Jul 15, 2021 6:28 PM',icon_url='')
@@ -234,9 +234,9 @@ class Bot(discord.Client):
                 not_answer = "**Option ➜** <:emoji_43:776062431100928001>"
          
     
-        self.embed.set_field_at(0, name="**__Option -１__**", value=f"➜ **[{lst_scores[0]}]({g}){one_check}{one_cross}**")
-        self.embed.set_field_at(1, name="**__Option -２__**", value=f"➜ **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
-        self.embed.set_field_at(2, name="**__Option -３__**", value=f"➜ **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
+        self.embed.set_field_at(0, name="**__Option -１__**", value=f"<a:test:852779743643697194> **[{lst_scores[0]}]({g}){one_check}{one_cross}**")
+        self.embed.set_field_at(1, name="**__Option -２__**", value=f"<a:test:852779743643697194> **[{lst_scores[1]}]({g}){two_check}{two_cross}**")
+        self.embed.set_field_at(2, name="**__Option -３__**", value=f"<a:test:852779743643697194> **[{lst_scores[2]}]({g}){three_check}{three_cross}**")
         #self.embed.set_field_at(3, name="**__Option -４__**", value=f"➜ **[{lst_scores[3]}]({g}){four_check}{four_cross}**")
         self.embed.set_thumbnail(url="{}".format(gif_ans))
         #self.embed.set_field_at(4, name="**__Correct Answer :__**", value=best_answer, inline=True)
@@ -318,7 +318,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('ODAzMTc1OTQ1OTMwMTQ1Nzky.YA594w.9eQET1TVvr7-cCVAZLJal9cDDPs'))
+    loop.create_task(selfbot.start('ODY1MjAxOTc2MDU5ODg3NjE4.YPAkIQ.goXY3PSdteRqQOk8r6oZME0OGq0'))
     loop.run_forever()
 
 if __name__ == '__main__':
