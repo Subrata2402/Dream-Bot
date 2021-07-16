@@ -15,7 +15,7 @@ from discord.ext.commands import bot
 import colorsys
   
 g="https://discord.gg/2degbQMAxU" 
-
+BOT_OWNER_ROLE = "streaming"
  
 oot_channel_id_list = ["865437203047514112"]
 
@@ -265,22 +265,21 @@ class Bot(discord.Client):
             return
 
         if message.content.lower() == "st":
-                await message.delete()
-            #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
-                self.embed_msg = None
-                await self.clear_results()
-                await self.update_embeds()
-                self.embed_msg = \
-                    await message.channel.send('@TriviaPlayers',embed=self.embed)
-                await self.embed_msg.add_reaction("<a:2tada:814902637635960862>")
-                await self.embed_msg.add_reaction("<a:fire:815094134845997086>")
-                self.embed_channel_id = message.channel.id  
+            await message.delete()
+            if BOT_OWNER_ROLE not in [role.name for role in message.author.roles]:
+                if not message.author.bot:
+                    embed=discord.Embed(title="<:cross:847394151779794984> | Missing Permission", description="**You don't have enough permission to run this command!**", color=discord.Colour.random())
+                    return await message.channel.send(embed=embed)
+            self.embed_msg = None
+            await self.clear_results()
+            await self.update_embeds()
+            self.embed_msg = \
+                await message.channel.send('@TriviaPlayers',embed=self.embed)
+            await self.embed_msg.add_reaction("<a:2tada:814902637635960862>")
+            await self.embed_msg.add_reaction("<a:fire:815094134845997086>")
+            self.embed_channel_id = message.channel.id  
 
-            #else:
-                #embed=discord.Embed(title="__Danger Private [DTB]#7565__", description="**Lol** You Not Have Permission to Use This **Cmd!** :stuck_out_tongue_winking_eye: If You Want to Use This Command Then DM Subrata#3297", color=0x00ff00)
-                #await message.channel.send("**Lol** You Not Have Permission To Use This Cmd! :stuck_out_tongue_winking_eye:")
-            #return
-                
+
         # process votes
         if message.channel.id == self.embed_channel_id:
             content = message.content.replace(' ', '').replace("'", "")
