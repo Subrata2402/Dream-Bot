@@ -72,10 +72,6 @@ class SelfBot(discord.Client):
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
 
-    # @bot.event
-    # async def on_message(message):
-    #    if message.content.startswith('-debug'):
-    #         await message.channel.send('d')
 
         def is_scores_updated(message):
             if message.guild == None or \
@@ -133,7 +129,7 @@ class Bot(discord.Client):
         self.embed.add_field(name="**__Option -３__**", value=f"<a:test:852779743643697194> **[0]({g})**", inline=False)
         #self.embed.add_field(name="**__Option -４__**", value=f"➜ **[0]({g})**", inline=False)
         self.embed.set_thumbnail(url="")
-        self.embed.set_footer(text='Jul 15, 2021 6:28 PM',icon_url='')
+        self.embed.set_footer(text='SreamingBot#6832',icon_url='https://images-ext-2.discordapp.net/external/JWj5o8TrqyCQ7ylM4pjW5wJMd8w0O0LpFEuxM7BoT2A/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/865201976059887618/9b91781dd996454b96bcf80008ec0291.webp')
         #self.embed.timestamp = datetime.datetime.utcnow()
         #self.embed.add_field(name="**__Correct Answer :__**", value="0", inline=False)
         #self.embed.add_field(name="**__Erased Answer !__**", value="0", inline=False) 
