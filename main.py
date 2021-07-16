@@ -275,7 +275,7 @@ class Bot(discord.Client):
             await self.clear_results()
             await self.update_embeds()
             self.embed_msg = \
-                await message.channel.send('',embed=self.embed)
+                await message.channel.send('@everyone',embed=self.embed)
             await self.embed_msg.add_reaction("<a:2tada:814902637635960862>")
             await self.embed_msg.add_reaction("<a:fire:815094134845997086>")
             self.embed_channel_id = message.channel.id  
