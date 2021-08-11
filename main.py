@@ -268,7 +268,7 @@ class Bot(discord.Client):
             await message.delete()
             
             if not message.author.bot:
-                if BOT_OWNER_ROLE not in [role.name for role in message.author.roles]:
+                if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                     embed=discord.Embed(title="<:cross:847394151779794984> | Missing Permission", description="**You don't have enough permission to run this command!**", color=discord.Colour.random())
                     return await message.channel.send(embed=embed)
             self.embed_msg = None
